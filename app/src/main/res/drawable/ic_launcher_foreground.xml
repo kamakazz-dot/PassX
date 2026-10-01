@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 1. Внешнее фиолетовое свечение дужки замка (#6A0DAD) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#6A0DAD"
+        android:strokeWidth="9"
+        android:strokeLineCap="round"
+        android:pathData="M 41, 50 V 37 A 13,13 0 0,1 67, 37 V 50" />
+
+    <!-- 2. Стеклянная дужка замка (Королевский синий #0047AB) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M 42, 50 V 38 A 12,12 0 0,1 66, 38 V 50">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="42"
+                android:startY="25"
+                android:endX="66"
+                android:endY="50"
+                android:type="linear">
+                <item android:color="#2563EB" android:offset="0.0" />
+                <item android:color="#0047AB" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Внутренний световой блик на дужке (эффект стекла) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#A5F3FC"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 43.5, 48 V 38.5 A 10.5,10.5 0 0,1 64.5, 38.5 V 48" />
+
+    <!-- 3. Внешний светящийся сине-фиолетовый ободок корпуса -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#6A0DAD"
+        android:strokeWidth="3.5"
+        android:pathData="M54,35 A23,23 0 1,0 54,81 A23,23 0 1,0 54,35" />
+
+    <!-- 4. Корпус замка из матового синего стекла (#0047AB) -->
+    <path android:pathData="M54,36 A22,22 0 1,0 54,80 A22,22 0 1,0 54,36">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="32"
+                android:startY="36"
+                android:endX="76"
+                android:endY="80"
+                android:type="linear">
+                <item android:color="#1D4ED8" android:offset="0.0" />
+                <item android:color="#0047AB" android:offset="0.6" />
+                <item android:color="#1E1B4B" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 5. Круглая стеклянная выемка по центру -->
+    <path android:pathData="M54,42 A16,16 0 1,0 54,74 A16,16 0 1,0 54,42">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="38"
+                android:startY="42"
+                android:endX="70"
+                android:endY="74"
+                android:type="linear">
+                <item android:color="#0F172A" android:offset="0.0" />
+                <item android:color="#1E1B4B" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Светящийся ободок круглой выемки -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="1.5"
+        android:pathData="M54,42 A16,16 0 1,0 54,74 A16,16 0 1,0 54,42" />
+
+    <!-- 6. Чистая белая буква «X» (#FFFFFF) в центре выемки -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5.5"
+        android:strokeLineCap="round"
+        android:pathData="M45,49 L63,67" />
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5.5"
+        android:strokeLineCap="round"
+        android:pathData="M63,49 L45,67" />
+</vector>
